@@ -129,7 +129,6 @@
 #  define cbor_ntohs        _byteswap_ushort
 #  define cbor_htons        _byteswap_ushort
 #elif defined(__arm__)
-#if defined(__arm__)
 static inline uint16_t bswap16(uint16_t x) {
 		return ((( x  >> 8 ) & 0xffu ) | (( x  & 0xffu ) << 8 ));
 	}
